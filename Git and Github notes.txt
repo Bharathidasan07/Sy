@@ -1,0 +1,81 @@
+initially you have to login to your github in your local system
+by adding the user name and user mailid in the cmd
+
+commands ->git config --global user.name ""
+	 ->git config --global user.email ""
+
+if you want to copy the the folder in the github to your local
+system use
+	 ->git clone __________
+		origin link
+after cloning
+	 ->cd _____ the cloned file name
+
+after changing the files in your local system
+	 ->git status 
+		it show the currnt status
+	 ->git add ___________ mention the file name in the space
+	 ->git commit -m "commit message"
+	 ->git push origin main
+
+from this the changes made in the local system is updated in the 
+git repository
+
+if any changes happened in the git repository it will be visible
+in the local system by adding commmand
+	 ->git pull
+
+new working folder is created in the local system. Adding the new
+folder in the github as new repository
+first change the current directory to new folder
+	 ->cd ..
+now  go to the new folder
+	 ->cd ______  put the folder name
+	 ->git init
+	 ->git add . if we put dot here all the changes made will
+be added
+	 ->git commit -m "message"
+	 ->git push origin main will show error as no orgin
+
+so we have to create a new repository in the github and then 
+in terminal type as
+	 ->git remote add origin the new repository link
+
+now the branch name or new repository will be master. if  we try
+to push by using ->git push orgin main it will again show error
+	 ->so now we have two option one is we use the master as
+ branch name like ->git push origin master  or we can change the
+banch name by using ->git branch -M main
+
+
+now we  can see about branches
+	 ->git branch -a 
+		this command shows all the branches in this
+ repository
+For creating a new branch
+	 ->git branch branchname
+
+To switch branch
+	 ->git checkout ________   branchname
+
+if we make changes in the new branch and push. the changes will 
+be happend only in the current branch. The main branch will not
+be modified
+
+Checking the difference between the branches use command
+	 ->git diff branchname from another branch
+
+to add the modification in the mainbranch from the new branch
+	 ->git merge newbranch
+	 ->git push origin main
+
+Pull request
+
+
+
+
+
+
+
+
+

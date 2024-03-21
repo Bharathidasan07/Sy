@@ -102,6 +102,41 @@ header ul li a:hover{
     color: white;
 }
 
+.tech , .nontech{
+    color: white;
+    background-color: black;
+    width: fit-content;
+    font-size: 1.8rem;
+    margin: 30px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.techevents , .nontechevents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.events{
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    width: 250px;
+}
+
+.event_name{
+    font-weight: bold;
+}
+
+
 #contact{
     display: flex;
     align-items: center;
@@ -111,7 +146,7 @@ header ul li a:hover{
     margin: 50px;
     border-radius: 20px;
     box-shadow: 0 0 20px 5px black;
-    background-color: blue;
+    background-color: white;
 }
 
 @media screen and (max-width: 700px) {

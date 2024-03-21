@@ -75,6 +75,10 @@ header ul li a:hover{
     color: blue;
 }
 
+li{
+    list-style: none;
+}
+
 #home{
     display: flex;
     flex-direction: column;
